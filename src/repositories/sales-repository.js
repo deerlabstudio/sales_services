@@ -31,7 +31,7 @@ const one = async (id) => {
 
 const store = async (sale) => {
   const newSale = await Sales.create({
-    provider: sale.customerId,
+    customer: sale.customerId,
     company: sale.company,
     total: sale.total,
     tax: sale.tax,
